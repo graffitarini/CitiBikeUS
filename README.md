@@ -16,9 +16,7 @@ Average Citi Bike Users Speed by Gender in January 2020
 
 ![Avg speed of two genders](https://user-images.githubusercontent.com/29014874/126963857-bcb30114-f05d-4912-917f-da08da745f74.png)
 
-There are some tweaks that we might want to make to this graph. First, gender right now is represented as an integer. It will make more sense if that column is represented as a factor. To do this, we can pass as.factor(gender) as the value for the x axis.
-
-Next, it looks like we have some unusual data around the age of 50. It looks like there are a ton of bikers with an unknown gender at that age. This might be something we want to dig into a bit more, but for now, let’s filter out the bikers with a gender of 0. We also filtered out bikers with an age over 100 — that seems like an error in data collection as well.
+It looks like we have some unusual data around the age of 50. It looks like there are a ton of bikers with an unknown gender at that age. This might be something we want to dig into a bit more. We filtered out bikers with an age over 100 — that seems like an error in data collection as well.
 
 ![final-average speed](https://user-images.githubusercontent.com/29014874/126964034-7f39867e-8d8d-4dcc-b296-9a199090af94.png)
 
